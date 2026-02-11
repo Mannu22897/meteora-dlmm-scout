@@ -1,0 +1,44 @@
+{
+  "name": "meteora-dlmm-scout-agent",
+  "version": "1.0.0",
+  "description": "AI Agent for autonomous Meteora DLMM pool scouting and liquidity management on Solana",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "scout": "tsx src/index.ts scout",
+    "monitor": "tsx src/index.ts monitor",
+    "agent": "tsx src/index.ts agent",
+    "rebalance": "tsx src/index.ts rebalance"
+  },
+  "keywords": [
+    "solana",
+    "defi",
+    "meteora",
+    "dlmm",
+    "liquidity",
+    "ai-agent",
+    "yield",
+    "hackathon"
+  ],
+  "author": "Corridor AI (Hermies)",
+  "license": "MIT",
+  "dependencies": {
+    "@meteora-ag/dlmm": "^1.0.0",
+    "@solana/web3.js": "^1.90.0",
+    "bn.js": "^5.2.1",
+    "dotenv": "^16.4.0",
+    "node-cron": "^3.0.3",
+    "chalk": "^5.3.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "^20.10.0",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}
